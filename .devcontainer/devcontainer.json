@@ -35,8 +35,11 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "pip3 install -r requirements.txt torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html",
-    "runArgs": ["--gpus", "all"]
+    "postCreateCommand": "pip3 install -r requirements.txt; python3 -m pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html",
+    "runArgs": [
+        "--gpus",
+        "all"
+    ]
     // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
     // "remoteUser": "vscode"
 }
