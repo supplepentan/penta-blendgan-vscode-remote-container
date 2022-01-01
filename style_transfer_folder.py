@@ -92,4 +92,3 @@ if __name__ == '__main__':
             cv2.imwrite(f'{args.outdir}/{name_in}_v_{name_style}.jpg', out)
 
     print('Done!')
-
