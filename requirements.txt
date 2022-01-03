@@ -2,6 +2,6 @@ future
 opencv-python
 Pillow
 gdown
-#dlib
+dlib
 scipy
 tqdm
