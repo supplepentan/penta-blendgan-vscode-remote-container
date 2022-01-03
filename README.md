@@ -1,24 +1,21 @@
-# Usage
+# Visual Studio Code Remote Container
 ```
-git clone https://github.com/supplepentan/penta-blendgan.git
-cd penta-blendgan
-wsl
-pyenv local 3.8.6
-python -m venv venv-wsl
-source venv-wsl/bin/activate
-python -m venv venv-wsl
-source venv-wsl/scripts/activate
-python -m pip install -r requirements.txt
-python -m pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+git clone https://github.com/supplepentan/penta-blendgan-vscode-remote-container.git
+cd penta-blendgan-vscode-remote-container
+code .
+```
+On VSCode, "Opne Folder in Container...".
+After building container, 
+Open "New Terminal",
+input the command.
+## Setup Command (Only once)
+```
 python setup.py
+```
+## Run command
+```
 python run.py
 
-```
-
-# Docker
-```
-docker build -t penta-blendgan .
-docker run --name penta-blendgan -it --gpus all -t penta-blendgan:latest
 ```
 
 # Original
