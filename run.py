@@ -9,8 +9,8 @@ def run_alignment(image_path):
   import dlib
   from alignment import align_face
   predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-  aligned_image = align_face(filepath=image_path, predictor=predictor) 
-  return aligned_image 
+  aligned_image = align_face(filepath=image_path, predictor=predictor)
+  return aligned_image
 
 files = glob.glob("./input/*.jpg") #元になる画像
 print(files)
