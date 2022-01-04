@@ -10,11 +10,11 @@ Open "New Terminal",
 input the command.
 ## Setup Command (Only once)
 ```
-python setup.py
+python3 setup.py
 ```
 ## Run command
 ```
-python run.py
+python3 run.py
 
 ```
 
